@@ -63,11 +63,11 @@ To start recipe app you need to first `signup`
 - Twitter: [@sja_thedude](https://twitter.com/sja_thedude)
 - LinkedIn: [sja-thedude](https://linkedin.com/in/sja-thedude)
 
-👤 **Gabriel CodePriest**
 
-- GitHub: [@githaub](https://github.com/)
-- Twitter: [@twitter](https://twitter.com/)
-- LinkedIn: [lindekin](https://www.linkedin.com/in/)
+👤 **GABRIEL NWACHUKWU**
+
+- GitHub: [@codePriest](https://github.com/gabrielcoder247)
+- LinkedIn: [@codepriest](https://www.linkedin.com/in/gabriel-nwachukwu-209613173/)
 
 ## 🤝 Contributing
 
