@@ -8,8 +8,6 @@
 
 # files.
 
-#
-
 # Given that it is always loaded, you are encouraged to keep this file as
 
 # light-weight as possible. Requiring heavyweight dependencies from this file
@@ -24,12 +22,9 @@
 
 # it.
 
-#
-
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
 RSpec.configure do |config|
-
   # rspec-expectations config goes here. You can use an alternate
 
   # assertion/expectation library such as wrong or the stdlib/minitest
@@ -37,7 +32,6 @@ RSpec.configure do |config|
   # assertions if you prefer.
 
   config.expect_with :rspec do |expectations|
-
     # This option will default to `true` in RSpec 4. It makes the `description`
 
     # and `failure_message` of custom matchers include text for helper methods
@@ -53,18 +47,13 @@ RSpec.configure do |config|
     #     # => "be bigger than 2"
 
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
-
   end
-
-
-
 
   # rspec-mocks config goes here. You can use an alternate test double
 
   # library (such as bogus or mocha) by changing the `mock_with` option here.
 
   config.mock_with :rspec do |mocks|
-
     # Prevents you from mocking or stubbing a method that does not exist on
 
     # a real object. This is generally recommended, and will default to
@@ -72,11 +61,7 @@ RSpec.configure do |config|
     # `true` in RSpec 4.
 
     mocks.verify_partial_doubles = true
-
   end
-
-
-
 
   # This option will default to `:apply_to_host_groups` in RSpec 4 (and will
 
@@ -89,9 +74,6 @@ RSpec.configure do |config|
   # triggering implicit auto-inclusion in groups with matching metadata.
 
   config.shared_context_metadata_behavior = :apply_to_host_groups
-
-
-
 
   # The settings below are suggested to provide a good initial experience
 
@@ -109,8 +91,6 @@ RSpec.configure do |config|
 
   #   config.filter_run_when_matching :focus
 
-  #
-
   #   # Allows RSpec to persist some state between runs in order to support
 
   #   # the `--only-failures` and `--next-failure` CLI options. We recommend
@@ -118,8 +98,6 @@ RSpec.configure do |config|
   #   # you configure your source control system to ignore this file.
 
   #   config.example_status_persistence_file_path = "spec/examples.txt"
-
-  #
 
   #   # Limits the available syntax to the non-monkey patched syntax that is
 
@@ -132,8 +110,6 @@ RSpec.configure do |config|
   #   #   - http://rspec.info/blog/2014/05/notable-changes-in-rspec-3/#zero-monkey-patching-mode
 
   #   config.disable_monkey_patching!
-
-  #
 
   #   # Many RSpec users commonly either run the entire suite or an individual
 
@@ -153,8 +129,6 @@ RSpec.configure do |config|
 
   #   end
 
-  #
-
   #   # Print the 10 slowest examples and example groups at the
 
   #   # end of the spec run, to help surface which specs are running
@@ -162,8 +136,6 @@ RSpec.configure do |config|
   #   # particularly slow.
 
   #   config.profile_examples = 10
-
-  #
 
   #   # Run specs in random order to surface order dependencies. If you find an
 
@@ -175,8 +147,6 @@ RSpec.configure do |config|
 
   #   config.order = :random
 
-  #
-
   #   # Seed global randomization in this process using the `--seed` CLI option.
 
   #   # Setting this allows you to use `--seed` to deterministically reproduce
@@ -186,5 +156,4 @@ RSpec.configure do |config|
   #   # as the one that triggered the failure.
 
   #   Kernel.srand config.seed
-
 end
