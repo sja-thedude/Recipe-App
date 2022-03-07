@@ -22,9 +22,9 @@ The Recipe app keeps track of all your recipes, ingredients, and inventory. It w
 
 - Make sure you have Ruby on Rails set up properly on your computer
 
-``` sh 
+``` sh
   git git@github.com:sja-thedude/Recipe-App.git
-``` 
+```
 
 ### Install
 
@@ -63,11 +63,11 @@ To start recipe app you need to first `signup`
 - Twitter: [@sja_thedude](https://twitter.com/sja_thedude)
 - LinkedIn: [sja-thedude](https://linkedin.com/in/sja-thedude)
 
-👤 **Gabriel CodePriest**
 
-- GitHub: [@githaub](https://github.com/)
-- Twitter: [@twitter](https://twitter.com/)
-- LinkedIn: [lindekin](https://www.linkedin.com/in/)
+👤 **GABRIEL NWACHUKWU**
+
+- GitHub: [@codePriest](https://github.com/gabrielcoder247)
+- LinkedIn: [@codepriest](https://www.linkedin.com/in/gabriel-nwachukwu-209613173/)
 
 ## 🤝 Contributing
 
