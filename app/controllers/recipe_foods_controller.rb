@@ -4,6 +4,10 @@ class RecipeFoodsController < ApplicationController
     @recipe_food = @recipe.recipe_foods.new
   end
 
+  def index
+    @recipe = Recipe.all
+  end
+
   def create
     @recipe = Recipe.find(params[:recipe_id])
     @recipe_food = @recipe.recipe_foods.create(recipe_foods_params)

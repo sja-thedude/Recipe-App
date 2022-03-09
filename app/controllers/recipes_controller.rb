@@ -1,48 +1,44 @@
 class RecipesController < ApplicationController
+  before_action :authenticate_user!
   def index
-    @recipes = Recipe.where(user_id: current_user.id)
+    @recipes = current_user.recipes
   end
 
   def show
-    @recipe = Recipe.where(id: params[:id]).includes(:recipe_foods).take
+    @recipes = set_recipe
+    @foods = current_user.foods
+    @recipe_foods = @recipes.recipe_foods
   end
 
-  def new
-    @recipe = Recipe.new
-  end
+  def new; end
 
   def create
-    @recipe = Recipe.new(recipe_params)
-    @recipe.user_id = current_user.id
-    if @recipe.save
-      flash[:success] = 'Object successfully created'
-      redirect_to @recipe
+    add_recipe = current_user.recipes.new(recipe_params)
+    if add_recipe.save
+      # redirect_to '/recipes', notice: 'Recipe was successfully added.'
+      flash[:notice] = 'Food created successfully.'
+      redirect_to '/recipes'
     else
-      flash[:error] = 'Something went wrong'
-      render 'new'
+      render :new, alert: 'Failed to add recipe'
     end
-  end
-
-  def update
-    @recipe = Recipe.find(params[:id])
-    if @recipe.update(public: params[:public])
-      flash[:success] = 'Object was successfully updated'
-    else
-      flash[:error] = 'Something went wrong'
-    end
-    redirect_to recipe_path(@recipe)
   end
 
   def destroy
-    @recipe = Recipe.find(params[:id])
+    @recipe = set_recipe
     @recipe.destroy
-    flash[:notice] = 'The Post was successfully destroyed.'
-    redirect_to recipes_url
+    respond_to do |format|
+      format.html { redirect_to recipes_url, notice: 'Recipes was deleted successfully.' }
+    end
   end
 
   private
 
+  def set_recipe
+    @recipe = Recipe.find(params[:id])
+    # @recipe = current_user.recipes.includes(:recipe_foods).find(params[:id])
+  end
+
   def recipe_params
-    params.require(:recipe).permit(:name, :cookingTime, :preparationTime, :description, :public)
+    params.require(:recipe).permit(:name, :preparationTime, :cookingTime, :description, :public, :user_id)
   end
 end
