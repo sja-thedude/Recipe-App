@@ -32,3 +32,4 @@
 
 .rubocop.yml
 .stylelintrc.json
+/node_modules
