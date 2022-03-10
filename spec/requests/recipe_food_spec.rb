@@ -16,7 +16,7 @@ RSpec.describe 'RecipeFood', type: :request do
       expect(response).to have_http_status(:ok)
     end
     it 'respons to html' do
-      expect(response.content_type).to include 'text/html'
+         expect(response.content_type).to include 'text/html'
     end
     it 'should include correct placeholder' do
       expect(response.body).to include('Add Recipe Food')

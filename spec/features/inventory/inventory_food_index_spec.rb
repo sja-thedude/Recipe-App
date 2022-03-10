@@ -19,7 +19,7 @@ RSpec.feature 'Inventory Food Index', type: :feature do
 
   it 'check status' do
     expect(page).to have_http_status(:ok)
-  end
+      end
 
   it 'show heading' do
     expect(page).to have_content(@inventory.name)
@@ -27,10 +27,10 @@ RSpec.feature 'Inventory Food Index', type: :feature do
 
   it 'show inventory food list' do
     expect(page).to have_content @food.name
-  end
+     end
 
   it 'show form button' do
     click_on('Add Food')
     expect(page).to have_button('Close')
-  end
+      end
 end

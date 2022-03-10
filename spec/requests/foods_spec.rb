@@ -42,5 +42,5 @@ RSpec.describe 'Foods', type: :request do
     it 'should include correct placeholder' do
       expect(response.body).to include('Name')
     end
-  end
+      end
 end
