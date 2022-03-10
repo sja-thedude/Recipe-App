@@ -1,4 +1,3 @@
-=begin
 require 'rails_helper'
 
 RSpec.feature 'Recipe Show', type: :feature do
@@ -18,10 +17,6 @@ RSpec.feature 'Recipe Show', type: :feature do
     expect(page).to have_current_path(root_path)
   end
 
-  it 'shows the button of adding ingredients to the recipe' do
-    expect(page).to have_content 'Add igredient'
-  end
-
   it 'shows recipe name' do
     expect(page).to have_content @recipe.name
   end
@@ -29,9 +24,4 @@ RSpec.feature 'Recipe Show', type: :feature do
   it 'shows recipe description' do
     expect(page).to have_content @recipe.description
   end
-
-  it 'shows generate shopping list button' do
-    expect(page).to have_content 'Generate Shopping List'
-  end
 end
-=end

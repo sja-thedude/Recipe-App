@@ -17,36 +17,36 @@
   }
   
 .recipe-detail {
-    width: 70%;
-    margin: 1rem auto;
-    display: flex;
-    flex-direction: column;
-  }
+  width: 70%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-detail h1 {
+  align-self: center;
+}
+
+.detals {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.time {
+  display: flex;
+}
+
+.actions {
+  display: flex;
+  margin: 2rem 0 1rem 0;
+  justify-content: space-between;
+}
   
-  .recipe-detail h1 {
-    align-self: center;
-  }
-  
-  .detals {
-    margin-top: 4rem;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .time {
-    display: flex;
-  }
-  
-  .actions {
-    display: flex;
-    margin: 2rem 0 1rem 0;
-    justify-content: space-between;
-  }
-  
-  .descr {
-    padding: 1rem;
-  }
-  
+.descr {
+  padding: 1rem;
+}
+
 hr {
   border-top: 1px solid black;
 }

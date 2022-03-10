@@ -1,4 +1,3 @@
-=begin
 require 'rails_helper'
 
 RSpec.feature 'RecipeFood Index', type: :feature do
@@ -13,7 +12,7 @@ RSpec.feature 'RecipeFood Index', type: :feature do
     click_button 'Log in'
     click_link('My recipes')
     click_link(@recipe.name)
-    click_link('Add igredient')
+    click_link('Add ingredient')
   end
 
   it 'check the recipe_food path' do
@@ -32,4 +31,3 @@ RSpec.feature 'RecipeFood Index', type: :feature do
     expect(page).to have_content('apple')
   end
 end
-=end
