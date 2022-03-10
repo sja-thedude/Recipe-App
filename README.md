@@ -22,9 +22,9 @@ The Recipe app keeps track of all your recipes, ingredients, and inventory. It w
 
 - Make sure you have Ruby on Rails set up properly on your computer
 
-``` sh 
+``` sh
   git git@github.com:sja-thedude/Recipe-App.git
-``` 
+```
 
 ### Install
 
