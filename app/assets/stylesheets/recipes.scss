@@ -3,19 +3,19 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 .recipes {
-    width: 70%;
-    margin: 1rem auto;
+  width: 70%;
+  margin: 1rem auto;
 }
 
 .recipe {
-    display: flex;
-    border: 2px solid black;
-    margin: 1rem auto;
-    justify-content: space-between;
-    padding: 1rem;
-    border-radius: 6px;
-  }
-  
+  display: flex;
+  border: 2px solid black;
+  margin: 1rem auto;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
 .recipe-detail {
   width: 70%;
   margin: 1rem auto;
@@ -42,7 +42,7 @@
   margin: 2rem 0 1rem 0;
   justify-content: space-between;
 }
-  
+
 .descr {
   padding: 1rem;
 }
