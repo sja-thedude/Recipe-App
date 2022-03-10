@@ -12,7 +12,7 @@ RSpec.feature 'RecipeFood Index', type: :feature do
     click_button 'Log in'
     click_link('My recipes')
     click_link(@recipe.name)
-    click_link('Add igredient')
+    click_link('Add ingredient')
   end
 
   it 'check the recipe_food path' do
