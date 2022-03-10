@@ -21,7 +21,7 @@ RSpec.feature 'Recipe Show', type: :feature do
     expect(page).to have_content @recipe.name
   end
 
-     it 'shows recipe description' do
+  it 'shows recipe description' do
     expect(page).to have_content @recipe.description
   end
 end

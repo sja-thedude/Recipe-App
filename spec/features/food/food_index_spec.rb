@@ -29,7 +29,7 @@ RSpec.feature 'Food Index', type: :feature do
 
   it 'check the user image' do
     expect(page).to have_selector('a')
-     end
+  end
 
   it 'Navigate to the create food' do
     click_link('Add food')

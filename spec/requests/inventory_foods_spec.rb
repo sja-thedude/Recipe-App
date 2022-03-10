@@ -16,7 +16,7 @@ RSpec.describe 'InventoryFoods', type: :request do
     end
     it 'respons to html' do
       expect(response.content_type).to include 'text/html'
-       end
+    end
     it 'should include correct placeholder' do
       expect(response.body).to include('Add Food')
     end

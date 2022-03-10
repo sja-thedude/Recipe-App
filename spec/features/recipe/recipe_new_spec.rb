@@ -4,7 +4,7 @@ RSpec.feature 'Food Index', type: :feature do
   before(:each) do
     @user = User.create(name: 'Testing', email: 'user@example.com', password: 'password')
     visit user_session_path
-      fill_in 'email', with: 'user@example.com'
+    fill_in 'email', with: 'user@example.com'
     fill_in 'pwd', with: 'password'
     click_button 'Log in'
     visit recipes_path
@@ -15,7 +15,7 @@ RSpec.feature 'Food Index', type: :feature do
     expect(page).to have_current_path(new_recipe_path)
   end
 
-    it 'creates the recipe successfully' do
+  it 'creates the recipe successfully' do
     fill_in 'name', with: 'Wonderful eggs'
     fill_in 'cookingTime', with: '10'
     fill_in 'preparationTime', with: '10'

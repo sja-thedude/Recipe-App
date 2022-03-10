@@ -29,7 +29,7 @@ RSpec.feature 'Food Index', type: :feature do
 
   it 'check the user image' do
     expect(page).to have_selector('button')
-     end
+  end
 
   it 'Navigate to the root path' do
     click_link('Back')

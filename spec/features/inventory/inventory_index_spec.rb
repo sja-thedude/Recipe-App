@@ -25,7 +25,7 @@ RSpec.feature 'Inventory Index', type: :feature do
 
   it 'show inventory description' do
     expect(page).to have_content @inventory.description
-     end
+  end
 
   it 'show inventory description' do
     click_on('Check Inventory')
