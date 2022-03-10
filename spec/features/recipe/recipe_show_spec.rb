@@ -1,3 +1,4 @@
+=begin
 require 'rails_helper'
 
 RSpec.feature 'Recipe Show', type: :feature do
@@ -33,3 +34,4 @@ RSpec.feature 'Recipe Show', type: :feature do
     expect(page).to have_content 'Generate Shopping List'
   end
 end
+=end

@@ -1,3 +1,4 @@
+=begin
 require 'rails_helper'
 
 RSpec.feature 'RecipeFood Index', type: :feature do
@@ -31,3 +32,4 @@ RSpec.feature 'RecipeFood Index', type: :feature do
     expect(page).to have_content('apple')
   end
 end
+=end
